@@ -1,4 +1,13 @@
-    // let test = {
+const firstName = document.querySelector('.firstName');
+const lastName = document.querySelector('.lastName');
+const age = document.querySelector('.age');
+const email = document.querySelector('.email');
+const password = document.querySelector('.password');
+
+   
+   
+   
+   // let test = {
     //     subject: 'physics',
     //     type: 'CBT-BASED',
     //     duration: '2 hours',
