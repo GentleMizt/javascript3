@@ -16,7 +16,7 @@
     // console.log(subject);
     // console.log(duration);
     // console.log(`${passmark} %`);
-
-    for (let i = 0; i < Object.values(test).length; i++){
-
+    let arr = Object.values(test);
+    for (let i = 0; i < arr.length; i++){
+        console.log(Object.keys(test)[i]);
     }
