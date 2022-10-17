@@ -1,12 +1,12 @@
-    let test = {
-        subject: 'physics',
-        type: 'CBT-BASED',
-        duration: '2 hours',
-        passmark: 80,
-        display(){
-            console.log(`The Exam i have later today is ${this.subject} and it is a ${this.type} exam. Just so you know the passmark of the exam is ${this.passmark}%`);
-        }
-    }
+    // let test = {
+    //     subject: 'physics',
+    //     type: 'CBT-BASED',
+    //     duration: '2 hours',
+    //     passmark: 80,
+    //     display(){
+    //         console.log(`The Exam i have later today is ${this.subject} and it is a ${this.type} exam. Just so you know the passmark of the exam is ${this.passmark}%`);
+    //     }
+    // }
 
     // console.log(test.subject);
     // console.log(test.type);
@@ -20,16 +20,23 @@
     // console.log(duration);
     // console.log(`${passmark} %`);
     
-    let person = {
-        name: 'lancer',
-        age: 20,
-        job: 'Currently hunting'
-    }
+    // let person = {
+    //     name: 'lancer',
+    //     age: 20,
+    //     job: 'Currently hunting'
+    // }
 
-    let displayObjectProperties = function(myObj){
-        for (let i = 0; i < Object.keys(myObj).length; i++){
-        return Object.keys(myObj)[i];
-        }
-    }
-    displayObjectProperties(person);
+    // let displayObjectProperties = function(myObj){
+    //     for (let i = 0; i < Object.keys(myObj).length; i++){
+    //     return Object.keys(myObj)[i];
+    //     }
+    // }
+    // displayObjectProperties(person);
     
+    let User = function(firstName, lastName, age, email, password ){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.email = email;
+        this.password = password 
+    }
