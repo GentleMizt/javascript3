@@ -3,8 +3,30 @@ const lastName = document.querySelector('.lastName');
 const age = document.querySelector('.age');
 const email = document.querySelector('.email');
 const password = document.querySelector('.password');
+const confirmPassword = document.querySelector('.confirm-password')
+submitBtn = document.querySelector('.submit')
 
-   
+    // disabling submit button if both passwords are not the same
+    // ASSIGNMENT: Make research on how to get JS to identify/listen to the values of password
+    // and confirm password respectively
+
+
+
+
+
+
+
+    let User = function(firstName, lastName, age, email, password ){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.email = email;
+        this.password = password 
+    }
+    // if (password.value !== confirmPassword.value){
+    //      disable the submit button
+    //     submitBtn.style.color = 'red';
+    // }
    
    
    // let test = {
@@ -42,10 +64,3 @@ const password = document.querySelector('.password');
     // }
     // displayObjectProperties(person);
     
-    let User = function(firstName, lastName, age, email, password ){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.email = email;
-        this.password = password 
-    }
