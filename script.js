@@ -2,9 +2,9 @@ const firstName = document.querySelector('.firstName');
 const lastName = document.querySelector('.lastName');
 const age = document.querySelector('.age');
 const email = document.querySelector('.email');
-const password = document.querySelector('.password');
-const confirmPassword = document.querySelector('.confirm-password')
-submitBtn = document.querySelector('.submit')
+const password = document.getElementById('pass');
+const confirmPassword = document.getElementById('pass2');
+submitBtn = document.querySelector('.submit');
 
     // disabling submit button if both passwords are not the same
     // ASSIGNMENT: Make research on how to get JS to identify/listen to the values of password
@@ -23,11 +23,21 @@ submitBtn = document.querySelector('.submit')
         this.email = email;
         this.password = password 
     }
-    // if (password.value !== confirmPassword.value){
-    //      disable the submit button
-    //     submitBtn.style.color = 'red';
-    // }
-   
+    confirmPassword.addEventListener('keyup', passwordCheck)
+
+    function passwordCheck(event){
+        setTimeout(() => {
+            if (password.value !== event.target.value){
+                //  disable the submit button
+                console.log(event.target);
+                submitBtn.style.display = 'none'
+            }
+            else{
+                submitBtn.style.display = 'inline'
+            }
+        }, 2000);
+    }
+    
    
    // let test = {
     //     subject: 'physics',
