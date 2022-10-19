@@ -29,13 +29,12 @@ submitBtn = document.querySelector('.submit');
         setTimeout(() => {
             if (password.value !== event.target.value){
                 //  disable the submit button
-                console.log(event.target);
                 submitBtn.style.display = 'none'
             }
             else{
                 submitBtn.style.display = 'inline'
             }
-        }, 2000);
+        }, 3000);
     }
     
    
